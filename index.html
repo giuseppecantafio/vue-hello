@@ -27,9 +27,9 @@
 
                     <h1>{{titolo}}</h1>
 
-                    <input type="text" v-model="nome">
+                    <input type="text" v-model="nome" :class="{noActive: isNoActive}">
 
-                    <button type="button" class="btn btn-primary" @click="bottoneCliccato(nome).prevent">Stampa il tuo titolo</button>
+                    <button type="button" class="btn btn-primary" @click="bottoneCliccato(nome)" :class="{noActive: isNoActive}">Stampa il tuo titolo con sotto un'immagine</button>
 
                     <img :src="immagine" alt="Questa è un'immagine" :class="{hidden: isHidden}">
 
